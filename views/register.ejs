@@ -1,4 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
+    <meta charset="utf-8">
+    <title>WhistleHQ - Registration</title>
 
+<<<<<<< HEAD
+    <style>
+        .col-centered{
+        width: 50%;
+        float: none;
+        margin: 0 auto;
+    }
+    </style>
+  </head>
+<body style="background-color: #4b5257">
+  <div class="container">
+  <div class="col-xs-12 col-sm-8 col-md-4 col-lg-4 col-centered">
+  <div class="jumbotron">
+      <h1>WhistleHQ</h1>
+      <br />
+      <h3>Confirm Registration</h3>
+      <br />
+        <form action="/signup" method="post">
+          <div class="form-group">
+              <label>Username:</label>
+            <input type="text" name="username" class="form-control" placeholder="Enter username">
+          </div>
+          <div class="form-group">
+              <label>Password:</label>
+            <input type="password" name="password" class="form-control" placeholder="Enter password">
+          </div>
+          <div class="form-group">
+              <label>Name:</label>
+              <input type="text" name="name" class="form-control" placeholder="Enter name"/>
+          </div>
+          <div class="custom-checkbox">
+            <label><input type="checkbox"> Remember me</label>
+          </div>
+          <input type="hidden" name="token" value = <%= token %> />
+          <input type="submit" value="Submit" class="btn-primary form-control">
+        </form>
+      </div>
+  </div>
+
+  </div>
+</body>
+</html>
+=======
 <b>Sign up with Token</b>
 <p>Please make your password memorable. We do not save your email and cannot reset your password if it is forgotten.</p>
 <form action="/signup" method="post">
@@ -20,3 +70,4 @@
         <input type="submit" value="Submit" />
     </div>
 </form>
+>>>>>>> d2b18af0fb10c7e9f180bb2abadef7f9a4e1e3b0

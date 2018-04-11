@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) Chetan, Gary, Jay, Paul
+Copyright (c) Gerges Beshay
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

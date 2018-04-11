@@ -4,14 +4,18 @@ const passport = require('passport');
 const login = require('connect-ensure-login');
 const signup = require('./signup.js')
 
-module.exports.index = (request, response) => response.render('default')
+module.exports.index = (request, response) => response.sendFile('/index.html', {root: __dirname });
+
+module.exports.about = (request, response) => {
+    response.render('about');
+};
 
 module.exports.loginForm = (request, response) => {
   //console.log(request.query.token)
   response.render('login');
 };
 
-module.exports.login = passport.authenticate('local', { successReturnToOrRedirect: '/', failureRedirect: '/login' });
+module.exports.login = passport.authenticate('local', { successReturnToOrRedirect: '/account', failureRedirect: '/login' });
 
 module.exports.signup = signup.signup;
 

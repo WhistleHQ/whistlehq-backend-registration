@@ -1,7 +1,7 @@
 'use strict';
 
 var admin = require('firebase-admin');
-var serviceAccount = require(null); // add firebase key here
+var serviceAccount = require('../whistlehq-si660-firebase-adminsdk-709mg-3e920152d0.json');
 var xssFilters = require('xss-filters');
 
 admin.initializeApp({

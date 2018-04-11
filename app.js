@@ -20,11 +20,11 @@ app.use(session({ secret: 'keyboard cat', resave: false, saveUninitialized: fals
 app.use(passport.initialize());
 app.use(passport.session());
 app.use('/register', register);
-
 // Passport configuration
 require('./auth');
 
 app.get('/', routes.site.index);
+app.get('/about', routes.site.about);
 app.get('/login', routes.site.loginForm);
 app.post('/login', routes.site.login);
 app.post('/signup', routes.site.signup);
@@ -32,6 +32,7 @@ app.post('/getToken', routes.getToken.getToken);
 app.get('/logout', routes.site.logout);
 app.get('/account', routes.site.account);
 
+app.use(express.static(__dirname + '/public'));
 
 app.get('/dialog/authorize', routes.oauth2.authorization);
 app.post('/dialog/authorize/decision', routes.oauth2.decision);
