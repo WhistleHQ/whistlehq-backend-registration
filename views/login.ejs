@@ -1,0 +1,33 @@
+<b>Sign up for account</b>
+<p>Enter up to five offical emails from your organization, including your own.</p>
+<p>Email from free providers will not accepted.</p>
+<p>Emails must have the same domain.</p>
+<p>Avoid using the emails of people are you friends with at work.</p>
+<p>Check your spam folder for a hidden registration link</p>
+<form action="/getToken" method="post">
+	<div>
+  	<label>emails:</label>
+  	<input type="text" name="emails" /><br />
+	</div>
+
+	<input type = "hidden" id="url_name" name = "url_name"><br />
+	<script>var name = document.URL;
+        document.getElementById("url_name").value = name;</script>
+	<div>
+	  <input type="submit" value="Submit" />
+	</div>
+
+
+
+</form>
+<!--
+<b>Test</b>
+<form action="/testEmails" method="post">
+    <div>
+        <label>Test Emails:</label>
+        <input type="text" name="emails" /><br/>
+    </div>
+    <div>
+        <input type="submit" value="Submit"/>
+    </div>
+</form> -->
